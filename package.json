@@ -32,21 +32,31 @@
     "prettier": "^1.14.3",
     "pretty-quick": "^1.7.0",
     "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-testing-library": "^5.2.0",
     "semantic-release": "^15.9.17",
     "ts-jest": "^23.10.4",
     "tslint": "^5.11.0"
   },
+  "peerDependencies": {
+    "react": "^16.5.2"
+  },
   "jest": {
+    "roots": [
+      "<rootDir>/src"
+    ],
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$",
     "moduleFileExtensions": [
       "ts",
-      "js"
-    ],
-    "testEnvironment": "node",
-    "transform": {
-      "^.+\\.ts$": "ts-jest"
-    },
-    "transformIgnorePatterns": [],
-    "testRegex": ".*/__tests__/.*\\.(test|spec)\\.ts$"
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
   },
   "husky": {
     "hooks": {
