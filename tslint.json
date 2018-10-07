@@ -2,6 +2,9 @@
   "extends": "tslint:recommended",
   "rules": {
     "interface-name": false,
-    "trailing-comma": false
+    "trailing-comma": false,
+    "arrow-parens": false,
+    "semicolon": false,
+    "no-empty": false
   }
 }

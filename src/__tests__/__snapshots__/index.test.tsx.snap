@@ -1,0 +1,293 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ToComponent /> Async apis async flow problems should call children with the correct props on failure 1`] = `
+[MockFunction] {
+  "calls": Array [
+    Array [
+      Object {
+        "data": null,
+        "error": null,
+        "loading": true,
+      },
+    ],
+    Array [
+      Object {
+        "data": null,
+        "error": null,
+        "loading": true,
+      },
+    ],
+    Array [
+      Object {
+        "data": null,
+        "error": [Error: trolololololololol],
+        "loading": false,
+      },
+    ],
+  ],
+  "results": Array [
+    Object {
+      "isThrow": false,
+      "value": "Loading",
+    },
+    Object {
+      "isThrow": false,
+      "value": "Loading",
+    },
+    Object {
+      "isThrow": false,
+      "value": "trolololololololol",
+    },
+  ],
+}
+`;
+
+exports[`<ToComponent /> Async apis async flow problems should call children with the correct props on success 1`] = `
+[MockFunction] {
+  "calls": Array [
+    Array [
+      Object {
+        "data": null,
+        "error": null,
+        "loading": true,
+      },
+    ],
+    Array [
+      Object {
+        "data": null,
+        "error": null,
+        "loading": true,
+      },
+    ],
+    Array [
+      Object {
+        "data": "I am Diogo and I am 27 years old",
+        "error": null,
+        "loading": false,
+      },
+    ],
+  ],
+  "results": Array [
+    Object {
+      "isThrow": false,
+      "value": "Loading",
+    },
+    Object {
+      "isThrow": false,
+      "value": "Loading",
+    },
+    Object {
+      "isThrow": false,
+      "value": "Loaded",
+    },
+  ],
+}
+`;
+
+exports[`<ToComponent /> Async apis async flow problems should call children with the correct props on success and ignore old errors 1`] = `
+[MockFunction] {
+  "calls": Array [
+    Array [
+      Object {
+        "data": null,
+        "error": null,
+        "loading": true,
+      },
+    ],
+    Array [
+      Object {
+        "data": null,
+        "error": null,
+        "loading": true,
+      },
+    ],
+    Array [
+      Object {
+        "data": "I am Diogo and I am 27 years old",
+        "error": null,
+        "loading": false,
+      },
+    ],
+  ],
+  "results": Array [
+    Object {
+      "isThrow": false,
+      "value": "Loading",
+    },
+    Object {
+      "isThrow": false,
+      "value": "Loading",
+    },
+    Object {
+      "isThrow": false,
+      "value": "Loaded",
+    },
+  ],
+}
+`;
+
+exports[`<ToComponent /> Async apis should call children with the correct props on failure 1`] = `
+[MockFunction] {
+  "calls": Array [
+    Array [
+      Object {
+        "data": null,
+        "error": null,
+        "loading": true,
+      },
+    ],
+    Array [
+      Object {
+        "data": null,
+        "error": [Error: trolololol],
+        "loading": false,
+      },
+    ],
+  ],
+  "results": Array [
+    Object {
+      "isThrow": false,
+      "value": "Loading",
+    },
+    Object {
+      "isThrow": false,
+      "value": "trolololol",
+    },
+  ],
+}
+`;
+
+exports[`<ToComponent /> Async apis should call children with the correct props on success 1`] = `
+[MockFunction] {
+  "calls": Array [
+    Array [
+      Object {
+        "data": null,
+        "error": null,
+        "loading": true,
+      },
+    ],
+    Array [
+      Object {
+        "data": "I am Diogo and I am 27 years old",
+        "error": null,
+        "loading": false,
+      },
+    ],
+  ],
+  "results": Array [
+    Object {
+      "isThrow": false,
+      "value": "Loading",
+    },
+    Object {
+      "isThrow": false,
+      "value": "Loaded",
+    },
+  ],
+}
+`;
+
+exports[`<ToComponent /> Sync apis should call children with the correct props on failure 1`] = `
+[MockFunction] {
+  "calls": Array [
+    Array [
+      Object {
+        "data": null,
+        "error": null,
+        "loading": true,
+      },
+    ],
+    Array [
+      Object {
+        "data": null,
+        "error": [Error: Trolololololol],
+        "loading": false,
+      },
+    ],
+  ],
+  "results": Array [
+    Object {
+      "isThrow": false,
+      "value": "Loading",
+    },
+    Object {
+      "isThrow": false,
+      "value": "Trolololololol",
+    },
+  ],
+}
+`;
+
+exports[`<ToComponent /> Sync apis should call children with the correct props on success 1`] = `
+[MockFunction] {
+  "calls": Array [
+    Array [
+      Object {
+        "data": null,
+        "error": null,
+        "loading": true,
+      },
+    ],
+    Array [
+      Object {
+        "data": "I am Diogo and I am 27 years old",
+        "error": null,
+        "loading": false,
+      },
+    ],
+  ],
+  "results": Array [
+    Object {
+      "isThrow": false,
+      "value": "Loading",
+    },
+    Object {
+      "isThrow": false,
+      "value": "Loaded",
+    },
+  ],
+}
+`;
+
+exports[`<ToComponent /> Sync apis should use custom parametersDidChange when provided 1`] = `
+[MockFunction] {
+  "calls": Array [
+    Array [
+      Object {
+        "data": null,
+        "error": null,
+        "loading": true,
+      },
+    ],
+    Array [
+      Object {
+        "data": "I am Diogo and I am 27 years old",
+        "error": null,
+        "loading": false,
+      },
+    ],
+    Array [
+      Object {
+        "data": "I am Diogo and I am 27 years old",
+        "error": null,
+        "loading": false,
+      },
+    ],
+  ],
+  "results": Array [
+    Object {
+      "isThrow": false,
+      "value": "Loading",
+    },
+    Object {
+      "isThrow": false,
+      "value": "Loaded",
+    },
+    Object {
+      "isThrow": false,
+      "value": "Loaded",
+    },
+  ],
+}
+`;
