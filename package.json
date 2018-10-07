@@ -1,6 +1,6 @@
 {
   "name": "react-to-component",
-  "version": "0.0.0-get-name",
+  "version": "0.0.0",
   "description": "Blazing fast library to componentify imperative or functional apis",
   "repository": {
     "type": "git",
