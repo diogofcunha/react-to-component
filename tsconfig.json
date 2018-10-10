@@ -10,7 +10,6 @@
     "pretty": true,
     "sourceMap": true,
     "strict": true,
-    "esModuleInterop": true,
     "outDir": "lib",
     "forceConsistentCasingInFileNames": true,
     "noEmitOnError": false,
