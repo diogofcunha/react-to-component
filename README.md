@@ -38,11 +38,16 @@ yarn add react-to-component
 </ToComponent>
 ```
 
+## Live examples
+
+- #### Async example
+  [![Edit react-to-component async example](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/92l7qw7l5p)
+
 ## Configuration
 
-| Prop                | Required | Default         | Type                                                                                                | Description                                                                                                                              |
-| ------------------- | -------- | --------------- | --------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| original            | ✔️       | ✖️              | `(...params: P[]) => Promise<T> or T` | The original function to be encapsulated                                                                                                 |
-| params              | ✔️       | ✖️              | `P[]`                                                                                               | The params that will be used in the function invocation                                                                                  |
+| Prop                | Required | Default         | Type                                                                                                    | Description                                                                                                                              |
+| ------------------- | -------- | --------------- | ------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| original            | ✔️       | ✖️              | `(...params: P[]) => Promise<T> or T`                                                                   | The original function to be encapsulated                                                                                                 |
+| params              | ✔️       | ✖️              | `P[]`                                                                                                   | The params that will be used in the function invocation                                                                                  |
 | children            | ✔️       | ✖️              | `({ data: T or null, error: Error or null, loading: boolean }) => JSX.Element or JSX.Element[] or null` | The render prop that controls you data flow                                                                                              |
-| parametersDidChange | ✖️       | Params equality | `(previousParams: P[], nextParams: P[]) => boolean`                                                 | Ability to supply a custom check for parameter equality, use this if for example you need to ignore some parameters for caching purposes |
+| parametersDidChange | ✖️       | Params equality | `(previousParams: P[], nextParams: P[]) => boolean`                                                     | Ability to supply a custom check for parameter equality, use this if for example you need to ignore some parameters for caching purposes |
