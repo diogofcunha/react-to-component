@@ -69,5 +69,15 @@
       "pre-commit": "pretty-quick --staged && yarn lint",
       "pre-push": "yarn test"
     }
-  }
+  },
+  "keywords": [
+    "react",
+    "componentify",
+    "convert-to-component",
+    "composition",
+    "async",
+    "promise",
+    "component",
+    "reactive"
+  ]
 }
