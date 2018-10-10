@@ -1,5 +1,5 @@
-import deepEquals from "fast-deep-equal";
-import React from "react";
+import deepEquals = require("fast-deep-equal");
+import * as React from "react";
 import { cleanup, render, waitForElement } from "react-testing-library";
 
 import ToComponent, { Props } from "..";
