@@ -1,7 +1,7 @@
-import React from "react";
+import * as React from "react";
 import { Props } from "./types";
 
-import deepEquals from "fast-deep-equal";
+import deepEquals = require("fast-deep-equal");
 
 interface State {
   data: any | null;
